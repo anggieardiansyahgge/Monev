@@ -3,17 +3,29 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
+height: 100%;
+margin: 0;
+min-height: 100vh;
 background-image: url('background.jpg');
 background-size: cover;
 background-repeat: no-repeat;
+background-size: contain; /* tidak akan memotong gambar*/
 height: 100%;
 font-family: 'Numans', sans-serif;
 }
+
+@media (max-width: 768px) {
+  .background {
+    background-image: url('foto-mobile.jpg');
+  }
+}
+
 
 .container{
 height: 100%;
 align-content: center;
 }
+
 
 .container2{
 position: relative;
@@ -117,3 +129,6 @@ margin-left: 4px;
   background-color: #000000;
   color: #000;
 }
+
+/* responsive */
+
