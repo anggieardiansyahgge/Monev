@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap CSS (untuk grid dan alignment) -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Dropdown -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
   <div class="container">
@@ -50,13 +53,33 @@
   <!-- Konten yang muncul setelah login -->
    <div class="container2">
   <div id="content" style="display:none; text-align:center; padding: 280px;">
+
     <h2 style="color:white;">Monitoring Evaluasi</h2>
     <div class="buttons">
-    <a href="https://app.powerbi.com/view?r=eyJrIjoiZTE5MGEyM2QtZWNiYS00ZGVhLWI3ZjItZDVmNDMxYjhlMGQ4IiwidCI6IjVlZGViNzljLWFmZTktNDQzMS1hMGQ1LTdhZDBjMTQ5YTQwMiIsImMiOjEwfQ%3D%3D" target="_blank" style="display:block; margin:10px; color:white;">QUADRAN</a>
-    <a href="https://app.powerbi.com/view?r=eyJrIjoiYjdhMmY3OTAtODNhYi00Yzc3LWFiOTctOGVhM2ZlM2FjYTBmIiwidCI6IjVlZGViNzljLWFmZTktNDQzMS1hMGQ1LTdhZDBjMTQ5YTQwMiIsImMiOjEwfQ%3D%3D" target="_blank" style="display:block; margin:10px; color:white;">REIMBURSEMENT</a>
-    <a href="https://app.powerbi.com/view?r=eyJrIjoiZWUxZDFhOTAtOTQ4Ny00YWVlLWE1ZDUtNzZkMTc4NGM5OTY0IiwidCI6IjVlZGViNzljLWFmZTktNDQzMS1hMGQ1LTdhZDBjMTQ5YTQwMiIsImMiOjEwfQ%3D%3D" target="_blank" style="display:block; margin:10px; color:white;">NOMOR PK</a>
-    <a href="https://app.powerbi.com/view?r=eyJrIjoiZWM4YWY4OGEtNWU0NS00M2Q1LTg2ZmItZjI5NzkyZGIyY2ViIiwidCI6IjVlZGViNzljLWFmZTktNDQzMS1hMGQ1LTdhZDBjMTQ5YTQwMiIsImMiOjEwfQ%3D%3D" target="_blank" style="display:block; margin:10px; color:white;">SALDO JUNI 2025</a>
-  </div>
+    <a href="monev.html" target="_blank" style=" margin:10px; color:white;">MONEV</a>
+    <a href="https://app.powerbi.com/view?r=eyJrIjoiYjdhMmY3OTAtODNhYi00Yzc3LWFiOTctOGVhM2ZlM2FjYTBmIiwidCI6IjVlZGViNzljLWFmZTktNDQzMS1hMGQ1LTdhZDBjMTQ5YTQwMiIsImMiOjEwfQ%3D%3D" target="_blank" style=" margin:10px; color:white;">REIMBURSEMENT</a>
+    <a href="https://app.powerbi.com/view?r=eyJrIjoiZWUxZDFhOTAtOTQ4Ny00YWVlLWE1ZDUtNzZkMTc4NGM5OTY0IiwidCI6IjVlZGViNzljLWFmZTktNDQzMS1hMGQ1LTdhZDBjMTQ5YTQwMiIsImMiOjEwfQ%3D%3D" target="_blank" style=" margin:10px; color:white;">NOMOR PK</a>
+    <div class="dropdown">
+      <a class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownSaldo" data-bs-toggle="dropdown" aria-expanded="false" target="_blank" style=" margin:10px; color:white;">QUADRAN 2025</a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownSaldo">
+        <li><a class="dropdown-item" href="https://app.powerbi.com/view?r=eyJrIjoiZTE5MGEyM2QtZWNiYS00ZGVhLWI3ZjItZDVmNDMxYjhlMGQ4IiwidCI6IjVlZGViNzljLWFmZTktNDQzMS1hMGQ1LTdhZDBjMTQ5YTQwMiIsImMiOjEwfQ%3D%3D" target="_blank">Juni 2025</a></li>
+        <!-- <li><a class="dropdown-item" href="" target="_blank">Juli 2025</a></li>
+        <li><a class="dropdown-item" href="" target="_blank">Agustus 2025</a></li>
+        <li><a class="dropdown-item" href="" target="_blank">September 2025</a></li> -->
+             </ul>
+      </div>
+    <div class="dropdown">
+      <a class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownSaldo" data-bs-toggle="dropdown" aria-expanded="false" target="_blank" style=" margin:10px; color:white;">SALDO 2025</a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownSaldo">
+        <li><a class="dropdown-item" href="https://app.powerbi.com/view?r=eyJrIjoiZWM4YWY4OGEtNWU0NS00M2Q1LTg2ZmItZjI5NzkyZGIyY2ViIiwidCI6IjVlZGViNzljLWFmZTktNDQzMS1hMGQ1LTdhZDBjMTQ5YTQwMiIsImMiOjEwfQ%3D%3D" target="_blank">Saldo Juni 2025</a></li>
+        <!-- <li><a class="dropdown-item" href="" target="_blank">Juli 2025</a></li>
+        <li><a class="dropdown-item" href="" target="_blank">Agustus 2025</a></li>
+        <li><a class="dropdown-item" href="" target="_blank">September 2025</a></li> -->
+      </ul>
+      </div>
+    </div>
+  
+
   </div>
   </div>
 

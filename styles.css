@@ -20,6 +20,39 @@ font-family: 'Numans', sans-serif;
   }
 }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap; /* Supaya kalau layar kecil, tombol turun */
+  justify-content: center; /* Tengah */
+  gap: 10px; /* Jarak antar tombol */
+  align-items: center;
+}
+
+/* Warna background dropdown putih, teks hitam */
+.dropdown-menu {
+  background-color: white !important;
+  border: 1px solid #ccc !important;
+  min-width: 100px; /* ukuran lebar minimal */
+  padding: 0; /* hilangkan padding default */
+  max-width: 180px; /* BATAS lebar maksimal */
+  white-space: normal; /* Boleh wrap teks panjang */
+  overflow-wrap: break-word; /* Pecah kata panjang jika perlu */
+  text-align: left; /* Rapi kiri */
+}
+
+/* Warna teks item normal */
+.dropdown-menu .dropdown-item {
+  color: #333 !important;
+  padding: 5px 5px; /* jarak dalam item */
+  font-size: 14px; /* ukuran huruf */
+}
+
+/* Warna saat hover */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #f0f0f0 !important;
+  color: #000 !important;
+}
 
 .container{
 height: 100%;
