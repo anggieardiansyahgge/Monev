@@ -34,7 +34,7 @@ font-family: 'Numans', sans-serif;
   border: 1px solid #ccc !important;
   min-width: 100px; /* ukuran lebar minimal */
   padding: 0; /* hilangkan padding default */
-  max-width: 180px; /* BATAS lebar maksimal */
+  max-width: 285px; /* BATAS lebar maksimal */
   white-space: normal; /* Boleh wrap teks panjang */
   overflow-wrap: break-word; /* Pecah kata panjang jika perlu */
   text-align: left; /* Rapi kiri */
@@ -75,7 +75,8 @@ background: rgba(0, 0, 0, 0.4); /* warna overlay hitam transparan */
 
 .card{
 height: 200px;
-margin-top: 350px;
+margin-top: 40px;
+margin-left: 600px;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(0,0,0,0.5) !important;
@@ -148,6 +149,9 @@ margin-left: 4px;
 
 .buttons a {
   display: inline-block;
+  width: 300px;       /* atur sesuai kebutuhan, misal 100%, 350px, dsb */
+  max-width: 90%;     /* biar responsif di layar kecil */
+  font-size: 18px;    /* opsional: teks lebih besar */
   margin: 10px;
   padding: 12px 24px;
   background-color: #ffffff33; /* putih transparan */
