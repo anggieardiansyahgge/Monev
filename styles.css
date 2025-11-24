@@ -74,16 +74,19 @@ background: rgba(0, 0, 0, 0.4); /* warna overlay hitam transparan */
 }
 
 .card{
-height: 200px;
-margin-top: 40px;
-margin-left: 600px;
-margin-bottom: auto;
-width: 400px;
-background-color: rgba(0,0,0,0.5) !important;
+    height: 150px;       /* tinggi diperkecil */
+    width: 300px;        /* lebar diperkecil */
+    margin-top: 20px;
+    margin-left: auto;   /* biar otomatis center */
+    margin-right: auto;  /* biar otomatis center */
+    background-color: rgba(0,0,0,0.5) !important;
+    padding: 15px;       /* opsional, biar isi tidak terlalu mepet */
+    border-radius: 10px; /* opsional, biar lebih bagus */
 }
 
+
 .social_icon span{
-font-size: 60px;
+font-size: 40px;
 margin-left: 10px;
 color: #FFC312;
 }
@@ -93,14 +96,14 @@ color: white;
 cursor: pointer;
 }
 
-.card-header h3{
+.card-header h5{
 color: white;
 }
 
 .social_icon{
 position: absolute;
-right: 20px;
-top: -45px;
+right: 5px;
+top: -25px;
 }
 
 .input-group-prepend span{
