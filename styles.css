@@ -170,5 +170,36 @@ margin-left: 4px;
   color: #000;
 }
 
+/* Test */
+
+.bg-slider {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  animation: slide 20s infinite;
+}
+
+/* Gambar-gambar slider */
+@keyframes slide {
+  15%   { background-image: url('background.jpg'); }
+  66%  { background-image: url('background2.jpg'); }
+  100%  { background-image: url('background4.jpg'); }
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.4);
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+
 /* responsive */
 
