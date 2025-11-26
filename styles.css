@@ -197,6 +197,7 @@ margin-left: 4px;
 /* Gambar-gambar slider */
 @keyframes slide {
     0%   { background-image: url('background.jpg'); }
+    10%   { background-image: url('background.jpg'); }
     33%  { background-image: url('background2.jpg'); }
     66%  { background-image: url('background4.jpg'); }
     100% { background-image: url('background.jpg'); }
