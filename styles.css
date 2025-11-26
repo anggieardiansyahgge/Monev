@@ -6,10 +6,10 @@ html,body{
 height: 100%;
 margin: 0;
 min-height: 100vh;
-background-image: url('background.jpg');
+/* background-image: url('background.jpg'); */
 background-size: cover;
 background-repeat: no-repeat;
-background-size: contain; /* tidak akan memotong gambar*/
+/* background-size: contain; tidak akan memotong gambar */
 height: 100%;
 font-family: 'Numans', sans-serif;
 }
@@ -173,20 +173,35 @@ margin-left: 4px;
 /* Test */
 
 .bg-slider {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  animation: slide 20s infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: slide 20s infinite;
+    z-index: -1;
+}
+
+.content-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   /* center vertical & horizontal */
+    padding: 0;
+    margin: 0;
 }
 
 /* Gambar-gambar slider */
 @keyframes slide {
-  15%   { background-image: url('background.jpg'); }
-  66%  { background-image: url('background2.jpg'); }
-  100%  { background-image: url('background4.jpg'); }
-  
+    0%   { background-image: url('background.jpg'); }
+    33%  { background-image: url('background2.jpg'); }
+    66%  { background-image: url('background4.jpg'); }
+    100% { background-image: url('background.jpg'); }
 }
+
 
 .overlay {
   position: absolute;
@@ -199,7 +214,6 @@ margin-left: 4px;
   color: white;
   text-align: center;
 }
-
 
 /* responsive */
 
