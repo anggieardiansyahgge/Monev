@@ -76,10 +76,10 @@ background: rgba(0, 0, 0, 0.4); /* warna overlay hitam transparan */
 .card{
     height: 150px;       /* tinggi diperkecil */
     width: 300px;        /* lebar diperkecil */
-    margin-top: 20px;
+    margin-top: 75px;
     margin-left: auto;   /* biar otomatis center */
-    margin-right: auto;  /* biar otomatis center */
-    background-color: rgba(0,0,0,0.5) !important;
+    margin-right: 1px;  /* biar otomatis center */
+    background-color: rgba(0,0,0,0.8) !important;
     padding: 15px;       /* opsional, biar isi tidak terlalu mepet */
     border-radius: 10px; /* opsional, biar lebih bagus */
 }
@@ -196,11 +196,23 @@ margin-left: 4px;
 
 /* Gambar-gambar slider */
 @keyframes slide {
-    0%   { background-image: url('background.jpg'); }
-    10%   { background-image: url('background.jpg'); }
-    33%  { background-image: url('background2.jpg'); }
-    66%  { background-image: url('background4.jpg'); }
-    100% { background-image: url('background.jpg'); }
+    0%   { background-image: url('1.jpg'); }
+    16%  { background-image: url('1.jpg'); }
+
+    17%  { background-image: url('2.jpg'); }
+    32%  { background-image: url('2.jpg'); }
+
+    33%  { background-image: url('3.jpg'); }
+    48%  { background-image: url('3.jpg'); }
+
+    49%  { background-image: url('4.jpg'); }
+    64%  { background-image: url('4.jpg'); }
+
+    65%  { background-image: url('5.jpg'); }
+    80%  { background-image: url('5.jpg'); }
+
+    81%  { background-image: url('6.jpg'); }
+    100% { background-image: url('6.jpg'); }
 }
 
 
