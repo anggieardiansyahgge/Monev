@@ -172,17 +172,7 @@ margin-left: 4px;
 
 /* Test */
 
-.bg-slider {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    animation: slide 20s infinite;
-    z-index: -1;
-}
+
 
 .content-wrapper {
     height: 100vh;
@@ -194,26 +184,44 @@ margin-left: 4px;
     margin: 0;
 }
 
-/* Gambar-gambar slider */
-@keyframes slide {
-    0%   { background-image: url('1.jpg'); }
-    16%  { background-image: url('1.jpg'); }
 
-    17%  { background-image: url('2.jpg'); }
-    32%  { background-image: url('2.jpg'); }
+.bg-slider {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 107vh;
 
-    33%  { background-image: url('3.jpg'); }
-    48%  { background-image: url('3.jpg'); }
+    background-size: cover;          /* fullscreen */
+    background-position: center;     /* fokus tengah */
+    background-repeat: no-repeat;
 
-    49%  { background-image: url('4.jpg'); }
-    64%  { background-image: url('4.jpg'); }
-
-    65%  { background-image: url('5.jpg'); }
-    80%  { background-image: url('5.jpg'); }
-
-    81%  { background-image: url('6.jpg'); }
-    100% { background-image: url('6.jpg'); }
+    animation: slide 40s infinite linear;
+    z-index: -1;
+    overflow: hidden;
 }
+
+@keyframes slide {
+    0%,10%     { background-image: url('1.jpg'); }
+    12.5%,22.5%{ background-image: url('2.jpg'); }
+    25%,35%    { background-image: url('3.jpg'); }
+    37.5%,47.5%{ background-image: url('4.jpg'); }
+    50%,60%    { background-image: url('5.jpg'); }
+    62.5%,72.5%{ background-image: url('6.jpg'); }
+    75%,85%    { background-image: url('7.jpg'); }
+    87.5%,100% { background-image: url('8.jpg'); }
+}
+
+@keyframes fade {
+    0%,10%     { background-image: url('1.jpg'); opacity: 1; }
+    12.5%,22.5%{ background-image: url('2.jpg'); opacity: 1; }
+    25%,35%    { background-image: url('3.jpg'); opacity: 1; }
+    37.5%,47.5%{ background-image: url('4.jpg'); opacity: 1; }
+    50%,60%    { background-image: url('5.jpg'); opacity: 1; }
+    62.5%,72.5%{ background-image: url('6.jpg'); opacity: 1; }
+    75%,85%    { background-image: url('7.jpg'); opacity: 1; }
+    87.5%,100% { background-image: url('8.jpg'); opacity: 1; }
+}
+
 
 
 .overlay {
