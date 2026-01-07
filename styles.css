@@ -62,7 +62,7 @@ align-content: center;
 
 .container2{
 position: relative;
-background: rgba(0, 0, 0, 0.4); /* warna overlay hitam transparan */
+background: rgba(0, 0, 0, 0.7); /* warna overlay hitam transparan */
   height: 100%;
   width: 100%;
   color: white;
@@ -150,14 +150,14 @@ color: white;
 margin-left: 4px;
 }
 
-.buttons a {
+.buttons a:not(.dropdown-item){
   display: inline-block;
   width: 300px;       /* atur sesuai kebutuhan, misal 100%, 350px, dsb */
   max-width: 90%;     /* biar responsif di layar kecil */
   font-size: 18px;    /* opsional: teks lebih besar */
   margin: 10px;
   padding: 12px 24px;
-  background-color: #ffffff33; /* putih transparan */
+  background-color: #0000009a; /* putih transparan */
   color: #000000;
   text-decoration: none;
   border: 2px solid #fff;
